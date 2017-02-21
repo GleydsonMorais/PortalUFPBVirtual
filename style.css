@@ -1,0 +1,261 @@
+/*
+
+	Theme Name: Portal UFPB Virtual
+	Author: Gleydson Morais
+	Version: 1.0
+*/
+
+/*====== BODY ======*/
+
+* { margin: 0; padding: 0; }
+body { font: 14px tahoma, arial, verdana; text-align: center; background: #FFFFFF; margin: 5px 0; }
+
+/*====== TOPO ======*/
+
+#Topo { width: 900px; height: 279px; position: relative; margin: auto; border-radius: 15px 15px 0 0; }
+
+	#Topo-MEC { width: 900px; height: 25px; background-image: url(images/topo-mec.png); margin: auto; border-radius: 15px 15px 0 0; }
+
+		#Topo-MEC img {  }
+
+			#Topo-MEC .miniedu { float: right; margin-top: 11px; margin-right: 74px; }
+
+			#Topo-MEC .govbra { float: right; margin-top: 9px; margin-right: 67px; }
+ 
+	#Topo-Logo { width: 900px; height: 200px; background: #888888; margin: auto; }
+
+		#Topo-Logo img { width: 900px; height: 200px; }
+
+	/*====== MENU ======*/
+
+	#Topo-Menu { width: 900px; height: 42px; margin: auto; background: #FFFFFF; }
+
+		#Topo-Menu-Menu { width: 900px; margin: 0 auto; position: absolute; z-index: 9999; }
+
+			#Topo-Menu-Menu ul { list-style: none; margin-left: 50px; }
+
+				#Topo-Menu-Menu ul li { width: 100px; float: left; position: relative; }
+			
+				#Topo-Menu-Menu ul li a { font: bold 12px/18px sans-serif; color: #000000; display: block; margin-right: -4px; padding: 10px 20px; background: #FFFFFF; text-decoration: none; cursor: pointer; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+
+					#Topo-Menu-Menu ul li:hover a { background: #0C2D57; color: #FFFFFF; }
+				
+					#Topo-Menu-Menu ul li ul { width: 200px; margin: 0; display: none; position: absolute; top: 38px; left: 0; opacity: 0; visibility: hidden; -webkit-transiton: opacity 0.2s; -moz-transition: opacity 0.2s; -ms-transition: opacity 0.2s; -o-transition: opacity 0.2s; -transition: opacity 0.2s; }
+					
+						#Topo-Menu-Menu ul li ul li { width: 200px; background: #0C2D57; display: block; color: #FFFFFF; text-align: left; }
+						
+							#Topo-Menu-Menu ul li ul li:hover a { background: #FFFFFF; color: #000000; }
+						
+					#Topo-Menu-Menu ul li:hover ul { display: block; opacity: 1; visibility: visible; }
+
+/*====== CONTEUDO ======*/
+
+#Conteudo { width: 900px; margin: auto; overflow: hidden; background: #FFFFFF; }
+
+	/*Carrossel*/
+
+	#Conteudo-Carrossel { width: 100%; height: 280px; background: #FFFFFF; }
+			
+		#Conteudo-Carrossel-Noticias #Noticia { width: 100%; height: 280px; }
+		
+			#Conteudo-Carrossel-Noticias #Noticia > div { width: 100%; height: 280px; }
+		
+				#Conteudo-Carrossel-Noticias #Noticia img { width: 347px; height: 260px; float: left; margin: 10px 10px; }
+		
+				#Conteudo-Carrossel-Noticias #Noticia div.text { width: 513px; height: 260px; background-color: #8CA0CD; margin: 10px 10px; float: left; position: relative; }
+		
+					#Conteudo-Carrossel-Noticias #Noticia div.text a { text-decoration: none; }
+
+						#Conteudo-Carrossel-Noticias #Noticia div.text a p { color: #FFFFFF; font-size: 20px;  margin: 0 20px; margin-top: 150px; }
+
+						#Conteudo-Carrossel-Noticias #Noticia div.text a:hover p { text-decoration: underline; }
+
+				#Conteudo-Carrossel-Noticias #Noticia div.text:after { content: " "; border: 10px solid transparent; border-right-color: #8CA0CD; display: block; width: 0; height: 0; margin-top: 20px; position: absolute; left: -20px; top: 35%; }
+
+	/*Noticias*/				
+
+	#Conteudo-Noticias { width: 700px; height: 600px; float: left; }
+
+			#Conteudo-Noticias-Noticia { width: 220px; height: 290px; float: left; }
+
+				.Noticia-Meio { margin: 0 20px; }
+				.Noticia-Cima { margin-bottom: 15px; }
+
+				#Conteudo-Noticias-Noticia-Topo { width: 100%; height: 30px; background: #FFFFFF; border-bottom: 3px solid #0C2D57; }
+	
+					#Conteudo-Noticias-Noticia-Topo-Imagem { width: 30px; height: 30px; background: #FFFFFF; float: left; }
+
+						#Conteudo-Noticias-Noticia-Topo-Imagem img { width: 30px; height: 30px; }
+
+						#Conteudo-Noticias-Noticia-Topo p { text-align: left; padding: 6px 40px; }
+
+				#Conteudo-Noticias-Noticia-Conteudo { width: 100%; height: 260px; background: #F7FBFC; margin-top: 2px; }
+
+					#Conteudo-Noticias-Noticia-Conteudo img { width: 220px; height: 165px; }
+
+					#Conteudo-Noticias-Noticia-Conteudo a { text-decoration: none; }
+
+					#Conteudo-Noticias-Noticia-Conteudo a:hover { text-decoration: underline; }
+
+					#Conteudo-Noticias-Noticia-Conteudo a p { font-size: 12px; text-align: justify; padding: 0 2px; color: #000000; }
+
+				#Conteudo-Noticias-Noticia-Baixo { width: 100%; height: 20px; background: #C0D7F3; text-align: left; }
+
+					#Conteudo-Noticias-Noticia-Baixo a { padding: 0 5px; text-decoration: none; color: #000000; }
+
+						#Conteudo-Noticias-Noticia-Baixo a:hover { text-decoration: underline; }
+
+	/*Conteudo Paginas*/
+
+	#Conteudo-Paginas { width: 700px; background: #FFFFFF; float: left; margin-top: 10px; }
+
+	#Conteudo-BarraLateral-Paginas { width: 190px; height: 600px; float: right; margin-top: 10px; }
+
+	/*Conteudo Paginas Modelos*/
+
+	#Conteudo-Pagina-Modelos { width: 700px; height: 570px; background: #FFFFFF; float: left; margin-top: 10px; }
+
+		#Conteudo-Pagina-Modelos-Posts { width: 700px; height: 113px; }
+
+			#Posts-Top { width: 700px; height: 100px; }
+
+				#Conteudo-Pagina-Modelos-Posts #Posts-Top a { text-decoration: none; }
+
+					#Conteudo-Pagina-Modelos-Posts #Posts-Top a:hover { text-decoration: underline; }
+
+				#Conteudo-Pagina-Modelos-Posts #Posts-Top a p { font-size: 20px; text-align: left; color: #000000; text-align: left; padding-top: 10px; }
+
+			#Posts-Bottom { width: 700px; height: 16px; border-bottom: 1px solid #000000; }
+
+				#Conteudo-Pagina-Modelos-Posts #Posts-Bottom p { text-align: right; padding-right: 5px; }
+
+	#Listagem-Posts-Paginas { width: 700px; height: 25px; padding-top: 7px; float: left; }
+
+	/*Barra Lateral*/
+
+	#Conteudo-BarraLateral { width: 190px; height: 600px; float: right; }
+
+		#Topo-BarraLateral { width: 190px; height: 60px; }
+
+		#Plataformas-BarraLateral { width: 190px; height: 155px; }
+
+		#Texto-Plataformas { width: 190px; height: 25px; }
+
+		#BibliotecaVirtual-BarraLateral { width: 190px; height: 155px; }
+
+		#Texto-BibliotecaVirtual { width: 190px; height: 25px; }
+
+		#Calendario-BarraLateral { width: 190px; height: 155px; }
+
+		#Texto-Calendario { width: 190px; height: 25px; }
+
+		/* STYLE BARRA LATERAL */
+
+		.infinite-carousel .list{ width:190px; height:1400px; background: #FFFFFF; overflow:visible; }
+            
+            .infinite-carousel .viewport{ width:190px; height:480px; overflow:hidden; }
+            
+            .item{ width:190px; height:150px; text-align: center; vertical-align: middle; line-height: 200px; float: left; margin-bottom: 15px; background: #FFFFFF; }
+
+            .pre { margin-top: 3px; width: 190px; height: 25px; }
+
+            .next { margin-top: 3px; width: 190px; height: 25px; }
+
+
+
+/*====== RodaPe ======*/
+
+#RodaPe { width: 900px; height: 160px;  margin: auto; background: #8CA0CD; margin-top: 10px; border-radius: 15px;}
+
+	#RodaPe-Conteudo { width: 100%; height: 30px; background: #0C2D57; margin: auto; }
+ 
+		#RodaPe-Conteudo-Conteudo { width: 900px; height: 30px; background: #0C2D57; margin: auto; }
+
+			#RodaPe-Conteudo-Conteudo-Inicio { width: 0px; height: 30px; float: left; }
+
+				#RodaPe-Conteudo-Conteudo-Inicio img { width: 60px; height: 60px; float: left; padding-top: 5px; padding-right: 35px; padding-left: 5px; }
+
+				#RodaPe-Conteudo-Conteudo-Inicio a p { text-align: left; color: #FFFFFF; padding: 25px; }
+				
+				#RodaPe-Conteudo-Conteudo-Inicio a { text-decoration: none; }
+
+					#RodaPe-Conteudo-Conteudo-Inicio a:hover { text-decoration: underline; color: #FFFFFF; }
+
+			#RodaPe-Conteudo-Conteudo-Texto { width: 900px; height: 30px; float: right; }
+
+				#RodaPe-Conteudo-Conteudo-Texto p { font-size: 15px; color: #FFFFFF; text-align: center; padding-top: 5px; }
+
+	#RodaPe-Parceiros { width: 100%; height: 100px; background: #F7FBFC; margin: auto; }
+
+		#RodaPe-Parceiros-Conteudo { width: 900px; height: 100px; margin: auto; }
+
+			#RodaPe-Parceiros-Conteudo-Logos { width: 600px; height: 100px; float: left; }
+
+				#RodaPe-Logo-Parceiros { width: 500px; height: 100px; float: left; }
+
+					#RodaPe-Logo-Parceiros img { padding: 15px 30px; }
+
+				#RodaPe-RedesSociais { width: 100px; height: 100px; float: right; }
+
+					#RodaPe-RedesSociais img { width: 25px; height: 25px; padding: 62px 5px 0 3px; float: right; }
+
+			#RodaPe-Parceiros-Conteudo-NewsLetter { width: 300px; height: 100px; float: right; }
+
+				#RodaPe-Parceiros-Conteudo-NewsLetter-Topo { width: 300px; height: 30px; float: top; }
+
+					#RodaPe-Parceiros-Conteudo-NewsLetter-Topo img { width: 30px; height: 30px; float: left; }
+
+					#RodaPe-Parceiros-Conteudo-NewsLetter-Topo p { font-size: 20px; float: left; padding: 5px 5px; color: #0C2D57; }
+
+				#RodaPe-Parceiros-Conteudo-NewsLetter-Conteudo { width: 300px; height: 70px; float: bottom; }
+
+					#NewsLetter-Email { width: 280px; margin: 8px 0; }
+
+					#NewsLetter-Nome { width: 200px; }
+
+					#NewsLetter-Criar { width: 75px; }
+
+	#RodaPe-Informacoes { width: 900px; height: 30px; background: #0C2D57; margin: auto; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; }
+
+		#RodaPe-Informacoes p { color: #FFFFFF; padding: 9px; font-size: 10px; }
+
+		#RodaPe-Informacoes p img { width: 8px; height: 8px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
